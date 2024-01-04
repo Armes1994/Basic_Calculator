@@ -7,7 +7,6 @@ public class ScientificFunctionController implements ScientificFunctionInt {
     public double y;
     public double result = 0;
     Scanner input = new Scanner(System.in);
-
     @Override
     public void scientificFunction(){
         System.out.println("\nScientific Function");
@@ -33,53 +32,52 @@ public class ScientificFunctionController implements ScientificFunctionInt {
                     case 1 -> {
                         SquareRoot squareRoot = new SquareRoot();
                         result = squareRoot.squareRoot();
-                        break;
+
                     }
                     case 2 -> {
                         CubeRoot cubeRoot = new CubeRoot();
                         result = cubeRoot.cubeRoot();
-                        break;
+
                     }
                     case 3 -> {
                         Cosine cosine = new Cosine();
                         result = cosine.cosine();
-                        break;
+
                     }
                     case 4 -> {
                         Sine sine = new Sine();
                         result = sine.sine();
-                        break;
+
                     }
                     case 5 -> {
                         Tan tan = new Tan();
                         result = tan.tan();
-                        break;
+
                     }
                     case 6 -> {
                         Power power = new Power();
                         result = power.power();
-                        break;
+
                     }
                     case 7 -> {
                         Log log = new Log();
                         result = log.log();
-                        break;
+
                     }
                     case 8 -> {
                         Exp exp = new Exp();
                         result = exp.exp();
-                        break;
+
                     }
                     case 9 -> {
                         Menu menu = new Menu();
                         menu.menu();
                         return;
+
                     }
+                    default -> System.out.println("Are you blind? : RETRY ");
 
-                    default -> System.out.println("Invalid: RETRY ");
                 }//END SWITCH
-
-                System.out.print("answer = "+result+"\n");
            }
         }
         catch(Exception e){

@@ -1,13 +1,5 @@
 package Package;
-import java.util.Scanner;
-
-class BasicArithmeticController {
-    double num1;
-    double num2;
-    double result = 0;
-
-    Scanner input = new Scanner(System.in);
-
+class BasicArithmeticController extends BAUserInput {
     public void basicOperation() {
         System.out.println("\nBasic Arithmetic ");
         System.out.println("1: Add");
@@ -18,32 +10,32 @@ class BasicArithmeticController {
 
         try {
 
-            while(true){
+            while(true) {
             
                 System.out.print("Pick between action 1-5: ");
                 int option = input.nextInt();
 
-                switch(option){
+                switch(option) {
 
                     case 1 -> {
                         Addition add = new Addition();
-                        add.getInput();
-                        System.out.println(add.basicOperation());
+                        add.input();
+                        System.out.println("answer = " + add.basicOperation() + "\n");
                     }
                     case 2 -> {
                         Subtraction subtract = new Subtraction();
-                        result = subtract.subtract(num1,num2);
-                        System.out.print("answer = "+result+"\n");
+                        subtract.input();
+                        System.out.print("answer = " + subtract.basicOperation() + "\n");
                     }
                     case 3 -> {
                         Multiplication multiply = new Multiplication();
-                        result = multiply.multiply(num1,num2);
-                        System.out.print("answer = "+result+"\n");
+                        multiply.input();
+                        System.out.print("answer = " +  multiply.basicOperation() + "\n");
                     }
                     case 4 -> {
                         Division divide = new Division();
-                        result = divide.divide(num1,num2);
-                        System.out.print("answer = "+result+"\n");
+                        divide.input();
+                        System.out.print("answer = " + divide.basicOperation() + "\n");
                     }
                     case 5 -> { 
                         Menu menu = new Menu();
@@ -51,13 +43,13 @@ class BasicArithmeticController {
                         return;
                     }
         
-                    default ->  System.out.println("Invalid: RETRY ");
+                    default ->  System.out.println("Are you blind? : RETRY ");
                 }//END SWITCH
 
             }
 
         }
-        catch(Exception e){
+        catch(Exception e) {
             System.out.println("YOU MESSED UP !!!");
             input.next();
 
