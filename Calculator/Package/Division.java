@@ -1,5 +1,5 @@
 package Package;
-class Division extends BasicArithmetic {
+class Division extends BasicArithmeticController {
     double divide(double num1,double num2){
         System.out.print("Enter First number: ");
         num1 = input.nextDouble();

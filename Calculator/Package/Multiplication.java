@@ -1,5 +1,5 @@
 package Package;
-class Multiplication extends BasicArithmetic {
+class Multiplication extends BasicArithmeticController {
     double multiply(double num1,double num2){
         System.out.print("Enter First number: ");
         num1 = input.nextDouble();

@@ -1,5 +1,5 @@
 package Package;
-class Power extends ScientificFunction {
+class Power extends ScientificFunctionController {
     double power(){
         System.out.print("Enter the value of x: ");
         x = input.nextDouble();
