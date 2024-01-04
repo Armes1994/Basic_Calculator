@@ -3,7 +3,7 @@ package Package;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-class Menu implements Calculator {
+class Menu implements MenuInt {
    
     @Override 
     public void menu(){
@@ -20,13 +20,13 @@ class Menu implements Calculator {
         while(true){
             switch(option){
                 case 1 -> {
-                        BasicArithmetic basicArithmetic = new BasicArithmetic();
-                        basicArithmetic.basicArithmetic();
+                        BasicArithmeticController basicArithmeticController = new BasicArithmeticController();
+                        basicArithmeticController.basicOperation();
                         return;
                 }
                 case 2 -> {
-                        ScientificFunction scientificFunction = new ScientificFunction();
-                        scientificFunction.scientificFunction();
+                        ScientificFunctionController scientificFunctionController = new ScientificFunctionController();
+                        scientificFunctionController.scientificFunction();
                         return;
                 }
                 case 3 -> {
@@ -47,19 +47,5 @@ class Menu implements Calculator {
     input.close();
 }
 
-    @Override
-    public void basicArithmetic() {
-      
-    }
-
-    @Override
-    public void exit() {
-        
-    }
-
-    @Override
-    public void scientificFunction() {
-        
-    }
 }
  

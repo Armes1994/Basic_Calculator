@@ -1,5 +1,5 @@
 package Package;
-class Subtraction extends BasicArithmetic {
+class Subtraction extends BasicArithmeticController {
     double subtract(double num1,double num2){
         System.out.print("Enter First number: ");
         num1 = input.nextDouble();

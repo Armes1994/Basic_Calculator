@@ -1,6 +1,6 @@
 package Package;
 
-class Exp extends ScientificFunction {
+class Exp extends ScientificFunctionController {
    
     double exp(){
         System.out.print("Enter the value of x: ");

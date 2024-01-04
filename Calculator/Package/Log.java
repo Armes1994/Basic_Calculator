@@ -1,5 +1,5 @@
 package Package;
-class Log extends ScientificFunction {
+class Log extends ScientificFunctionController {
     double log(){
         System.out.print("Enter the value of x: ");  
         x = input.nextDouble();

@@ -1,5 +1,5 @@
 package Package;
-class Tan extends ScientificFunction {
+class Tan extends ScientificFunctionController {
     double tan(){
         System.out.print("Enter the value of x: ");
         x = input.nextDouble();

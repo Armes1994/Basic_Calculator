@@ -1,6 +1,6 @@
 package Package;
 
-public class Exit implements Calculator {
+public class Exit implements ExitInt {
    
     @Override
     public void exit(){
@@ -11,18 +11,5 @@ public class Exit implements Calculator {
                             \tGood Bye (* ^ v ^ *) /
                             """);
                         }
-   }
-   @Override
-   public void basicArithmetic() {
-       
-   }
-
-   @Override
-   public void scientificFunction(){
-
-   }
-   @Override
-   public void menu() { 
-       
    }
 }
