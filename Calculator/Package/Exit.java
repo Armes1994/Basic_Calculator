@@ -1,7 +1,5 @@
 package Package;
-
-public class Exit implements ExitInt {
-   
+class Exit implements ExitInt {
     @Override
     public void exit(){
         {System.out.println("""

@@ -1,11 +1,7 @@
 package Package;
-class Multiplication extends BasicArithmeticController {
-    double multiply(double num1,double num2){
-        System.out.print("Enter First number: ");
-        num1 = input.nextDouble();
-        System.out.print("Enter Second number: ");
-        num2 = input.nextDouble();
-        return result = (num1 * num2);
-
+class Multiplication extends BAUserInput implements BasicArithmeticInt {
+    @Override
+    public double basicOperation() {
+        return getNum1() * getNum2();
     }
 }
