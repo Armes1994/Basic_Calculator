@@ -1,8 +1,7 @@
 package Package;
-class SquareRoot extends ScientificFunctionController {
-    double squareRoot(){
-        System.out.print("Enter the value of x: ");
-        x = input.nextDouble();
-        return result = Math.sqrt(x);
+class SquareRoot extends UserInput implements ScientificFunctionInt {
+    @Override
+    public double scientificFunction() {
+        return Math.sqrt(getX());
     }
 }

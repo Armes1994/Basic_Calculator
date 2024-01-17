@@ -1,5 +1,5 @@
 package Package;
 
 public interface ScientificFunctionInt {
-    void scientificFunction();
+    double scientificFunction();
 }

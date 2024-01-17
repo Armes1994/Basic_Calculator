@@ -1,5 +1,5 @@
 package Package;
-class Division extends BAUserInput implements BasicArithmeticInt {
+class Division extends UserInput implements BasicArithmeticInt {
     @Override
     public double basicOperation() {
         if(getNum2() == 0){

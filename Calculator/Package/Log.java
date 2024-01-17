@@ -1,8 +1,7 @@
 package Package;
-class Log extends ScientificFunctionController {
-    double log(){
-        System.out.print("Enter the value of x: ");  
-        x = input.nextDouble();
-        return result = Math.log(x);
-    } 
+class Log extends UserInput implements ScientificFunctionInt {
+    @Override
+    public double scientificFunction() {
+        return Math.log(getX());
+    }
 }
