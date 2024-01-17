@@ -1,5 +1,5 @@
 package Package;
-class BasicArithmeticController extends BAUserInput {
+class BasicArithmeticController extends UserInput {
     public void basicOperation() {
         System.out.println("\nBasic Arithmetic ");
         System.out.println("1: Add");
@@ -19,22 +19,22 @@ class BasicArithmeticController extends BAUserInput {
 
                     case 1 -> {
                         Addition add = new Addition();
-                        add.input();
+                        add.input1();
                         System.out.println("answer = " + add.basicOperation() + "\n");
                     }
                     case 2 -> {
                         Subtraction subtract = new Subtraction();
-                        subtract.input();
+                        subtract.input1();
                         System.out.print("answer = " + subtract.basicOperation() + "\n");
                     }
                     case 3 -> {
                         Multiplication multiply = new Multiplication();
-                        multiply.input();
+                        multiply.input1();
                         System.out.print("answer = " +  multiply.basicOperation() + "\n");
                     }
                     case 4 -> {
                         Division divide = new Division();
-                        divide.input();
+                        divide.input1();
                         System.out.print("answer = " + divide.basicOperation() + "\n");
                     }
                     case 5 -> { 

@@ -1,13 +1,5 @@
 package Package;
-
-import java.util.Scanner;
-
-public class ScientificFunctionController implements ScientificFunctionInt {
-    public double x;
-    public double y;
-    public double result = 0;
-    Scanner input = new Scanner(System.in);
-    @Override
+public class ScientificFunctionController extends UserInput {
     public void scientificFunction(){
         System.out.println("\nScientific Function");
         System.out.println("1. Square Root(x)");
@@ -19,7 +11,6 @@ public class ScientificFunctionController implements ScientificFunctionInt {
         System.out.println("7. Log(x)");
         System.out.println("8. Exp(x)");
         System.out.println("9. ->> Menu");
-        
 
         try{
             while(true){
@@ -31,42 +22,50 @@ public class ScientificFunctionController implements ScientificFunctionInt {
                     
                     case 1 -> {
                         SquareRoot squareRoot = new SquareRoot();
-                        result = squareRoot.squareRoot();
+                        squareRoot.input2();
+                        System.out.println("answer = " + squareRoot.scientificFunction() + "\n");
 
                     }
                     case 2 -> {
                         CubeRoot cubeRoot = new CubeRoot();
-                        result = cubeRoot.cubeRoot();
+                        cubeRoot.input2();
+                        System.out.println("answer = " + cubeRoot.scientificFunction() + "\n");
 
                     }
                     case 3 -> {
                         Cosine cosine = new Cosine();
-                        result = cosine.cosine();
+                        cosine.input2();
+                        System.out.println("answer = " + cosine.scientificFunction() + "\n");
 
                     }
                     case 4 -> {
                         Sine sine = new Sine();
-                        result = sine.sine();
+                        sine.input2();
+                        System.out.println("answer = " + sine.scientificFunction() + "\n");
 
                     }
                     case 5 -> {
                         Tan tan = new Tan();
-                        result = tan.tan();
+                        tan.input2();
+                        System.out.println("answer = " + tan.scientificFunction() + "\n");
 
                     }
                     case 6 -> {
                         Power power = new Power();
-                        result = power.power();
+                        power.input3();
+                        System.out.println("answer = " + power.scientificFunction() + "\n");
 
                     }
                     case 7 -> {
                         Log log = new Log();
-                        result = log.log();
+                        log.input2();
+                        System.out.println("answer = " + log.scientificFunction() + "\n");
 
                     }
                     case 8 -> {
                         Exp exp = new Exp();
-                        result = exp.exp();
+                        exp.input2();
+                        System.out.println("answer = " + exp.scientificFunction() + "\n");
 
                     }
                     case 9 -> {
@@ -75,7 +74,7 @@ public class ScientificFunctionController implements ScientificFunctionInt {
                         return;
 
                     }
-                    default -> System.out.println("Are you blind? : RETRY ");
+                    default -> System.out.println("\nAre you blind? : RETRY ");
 
                 }//END SWITCH
            }

@@ -1,6 +1,6 @@
 package Package;
 import java.util.InputMismatchException;
-class Menu extends BAUserInput implements MenuInt {
+class Menu extends UserInput implements MenuInt {
     @Override
     public void menu() {
 
